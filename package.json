@@ -1,8 +1,8 @@
 {
-  "name": "@nestjs-modules/ioredis",
+  "name": "@strongnguyen/nestjs-ioredis",
   "version": "1.0.1",
   "description": "Nest - a ioredis module (@ioredis)",
-  "author": "Nest Modules TM",
+  "author": "Nest Modules TM - custom strongnguyen",
   "private": false,
   "license": "MIT",
   "scripts": {
@@ -25,8 +25,8 @@
     "ioredis"
   ],
   "peerDependencies": {
-    "@nestjs/common": "^6.7.0 || ^7.0.0 || ^8.0.0",
-    "@nestjs/core": "^6.7.0 || ^7.0.0 || ^8.0.0",
+    "@nestjs/common": "^6.7.0 || ^7.0.0 || ^8.0.0 || ^9.0.0",
+    "@nestjs/core": "^6.7.0 || ^7.0.0 || ^8.0.0 || ^9.0.0",
     "ioredis": "^4.0.0"
   },
   "devDependencies": {
@@ -62,6 +62,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nest-modules/ioredis"
+    "url": "git+https://github.com/strongnguyen29/ioredis"
   }
 }

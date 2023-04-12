@@ -18,6 +18,12 @@ export function createRedisConnection(options: RedisModuleOptions) {
   const { config } = options;
   if (config.url) {
     return new Redis(config.url, config);
+  } else if (config.isCluster) {
+    const hosts = options.config.host.split(',');
+    const nodes = hosts.map((host) => {
+      return { host: host.trim(), port: options.config.port }
+    })
+    return new Redis.Cluster(nodes, { redisOptions: { password: options.config.password }});
   } else {
     return new Redis(config);
   }

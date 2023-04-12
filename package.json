@@ -1,6 +1,6 @@
 {
   "name": "@strongnguyen/nestjs-ioredis",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Nest - a ioredis module (@ioredis)",
   "author": "Nest Modules TM - custom strongnguyen",
   "private": false,

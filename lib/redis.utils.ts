@@ -19,18 +19,7 @@ export function createRedisConnection(options: RedisModuleOptions) {
   if (config.url) {
     return new Redis(config.url, config);
   } else if (config.isCluster) {
-    const hosts = config.host.split(',');
-    const nodes = hosts.map((host) => {
-      return { host: host.trim(), port: config.port }
-    })
-    return new Redis.Cluster(nodes, {
-      enableReadyCheck: true,
-      scaleReads: "all", //"slave",
-      redisOptions: {
-        password: config.password,
-        enableOfflineQueue: true,
-      }
-    });
+    return new Redis.Cluster(config.nodes, config);
   } else {
     return new Redis(config);
   }

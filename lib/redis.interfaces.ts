@@ -5,7 +5,7 @@ export type Redis = Redis.Redis;
 export type RedisCluster = Redis.Cluster;
 
 export interface RedisModuleOptions {
-  config: Redis.RedisOptions & { url?: string, isCluster?: boolean, nodes: { host: string, port: number }[] };
+  config: Redis.RedisOptions & { url?: string, isCluster?: boolean, nodes?: { host: string, port: number }[] };
 }
 
 export interface RedisModuleOptionsFactory {

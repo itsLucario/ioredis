@@ -1,6 +1,6 @@
 {
-  "name": "@strongnguyen/nestjs-ioredis",
-  "version": "1.0.6",
+  "name": "@itsLucario/nestjs-ioredis",
+  "version": "1.1.0",
   "description": "Nest - a ioredis module (@ioredis)",
   "author": "Nest Modules TM - custom strongnguyen",
   "private": false,
@@ -62,6 +62,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strongnguyen29/ioredis"
+    "url": "git+https://github.com/itsLucario/ioredis"
   }
 }
